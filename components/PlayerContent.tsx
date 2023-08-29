@@ -1,6 +1,7 @@
 "use client";
-
+// @ts-ignore
 import useSound from "use-sound"
+import AudioPlayer from "react-audio-player";
 
 import { useEffect, useState } from "react";
 import { BsPauseFill, BsPlayFill } from "react-icons/bs";
@@ -33,6 +34,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
     const [isPlaying, setIsPlaying]= useState(false);
     const Icon = isPlaying ? BsPauseFill: BsPlayFill; 
     const VolumeIcon = volume===0 ? HiSpeakerXMark : HiSpeakerWave;
+
 
     const onPlayNext = ()=>{
         if(player.ids.length===0){
