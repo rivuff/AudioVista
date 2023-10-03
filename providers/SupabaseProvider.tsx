@@ -14,7 +14,7 @@ const SupabaseProvider: React.FC<SupabaseProviderProps> = ({
 })=>{
     
     const [supabaseClient] = useState(()=>
-    createClientComponentClient<Database>()
+        createClientComponentClient<Database>()
     )
 
     return (
@@ -24,5 +24,4 @@ const SupabaseProvider: React.FC<SupabaseProviderProps> = ({
     )
 } 
 
-
-export default SupabaseProvider
+export default SupabaseProvider;

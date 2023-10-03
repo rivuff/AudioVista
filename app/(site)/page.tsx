@@ -3,13 +3,14 @@ import Image from 'next/image'
 import ListItem from '@/components/ListItem'
 import getSongs from '@/actions/getSongs';
 import PageContent from './components/PageContent';
+//import Error from './error';
+
 
 export const revalidate = 0;
 
 export default async function Home() {
 
   const songs = await getSongs();
-
 
   return (
     <div className='
